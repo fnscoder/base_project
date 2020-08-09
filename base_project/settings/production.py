@@ -9,9 +9,9 @@ SESSION_COOKIE_SECURE = True
 # In your .env file add your administrators as in the example:
 # ADMINS="'(\"Your Name\", \"email@example.com\")','(\"Your Name\", \"email@example.com\")'"
 # https://docs.djangoproject.com/en/2.2/ref/settings/#admins
-ADMINS = config('ADMINS', cast=lambda admins: [eval(admin) for admin in Csv()(admins)])
+#ADMINS = config('ADMINS', cast=lambda admins: [eval(admin) for admin in Csv()(admins)])
 
-MANAGERS = ADMINS
+#MANAGERS = ADMINS
 
 IGNORABLE_404_URLS = [
     re.compile(r'^/apple-touch-icon.*\.png$'),
