@@ -44,3 +44,8 @@ auto-save-list
 .project
 .settings
 .pydevproject
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
