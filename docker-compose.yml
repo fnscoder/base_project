@@ -9,7 +9,7 @@ services:
       - "5432:5432"
   web:
     build: .
-    # command: gunicorn --worker-tmp-dir=/dev/shm --workers=2 --threads=4 --worker-class=gthread --log-file=- --bind=0.0.0.0:8000 base_project.wsgi
+    command: gunicorn --worker-tmp-dir=/dev/shm --workers=2 --threads=4 --worker-class=gthread --log-file=- --bind=0.0.0.0:8000 base_project.wsgi
     volumes:
       - .:/code
     ports:
