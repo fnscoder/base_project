@@ -2,9 +2,9 @@ import re
 
 from .base import *  # noqa
 
-CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = False
 
-SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = False
 
 # In your .env file add your administrators as in the example:
 # ADMINS="'(\"Your Name\", \"email@example.com\")','(\"Your Name\", \"email@example.com\")'"
