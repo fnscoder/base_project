@@ -1,0 +1,17 @@
+.idea
+.git
+.python-version
+.DS_Store
+.env.development
+.env.staging
+.env.production
+*.sqlite3
+__pycache__
+static
+media
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+/venv/
